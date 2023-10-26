@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Photos and HTML</title>
+</head>
+<body>
+    <h1>Upload Photos and HTML</h1>
+
+    <h2>Upload a Photo</h2>
+    <form action="/upload/photo" method="POST" enctype="multipart/form-data">
+        <label for="photoTitle">Title:</label>
+        <input type="text" id="photoTitle" name="title" required>
+        <br>
+        <label for="photoOwner">Owner:</label>
+        <input type="text" id="photoOwner" name="owner" required>
+        <br>
+        <input type="file" name="photo" accept="image/*" required>
+        <br>
+        <input type="submit" value="Upload Photo">
+    </form>
+</body>
+</html>
